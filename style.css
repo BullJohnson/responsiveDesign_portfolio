@@ -12,3 +12,9 @@
 }
 .weekly_lesson      {   margin-bottom: -1%;}
 .attachments        {   margin-top: -1%;}
+
+a:link               {  color: #000000;}
+a:visited            {  color: #000000;}
+a:hover              {  color: #0000ff;
+                        font-size: 105%;
+}
