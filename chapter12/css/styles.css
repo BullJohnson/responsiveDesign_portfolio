@@ -1,0 +1,16 @@
+/*
+    Student Name:  William S. Johnson, Jr
+	File Name:  File Name: Getting Started With Bootstrap
+	Current Date:  11/27/2024
+*/
+
+.bg-light-blue {
+    background-color: #cce6ff;
+}
+
+nav {
+    margin-left: 1%;
+}
+
+/* Used Bootstraps "py-4" class, on the header element, 
+rather than creating a custom style rule for padding */
