@@ -7,222 +7,334 @@
 <html>
 
   <head>
+        <!-- Meta Tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>replit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learn to use a mobile-first strategy to design responsive web pages">
+    <title>Responsive Web Design | Portfolio</title>
+       <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css" />
+        <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
-  
+
   <body>
 
-    <main>
-      
-      <div id="gallery">
+    <div class="wrapper mt-5">
+
+      <nav class="navbar navbar-expand-sm navbar-dark">
         
-        <div class="column">
+        <!-- Hamburger menu -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" 
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <img class="navbar-brand my_logo" src="images/my_mug.png" alt="">
 
-          <div>
-            <a href="chapter01/index.html" target="_blank">
-              <h3 class="weekly_lesson">Chapter 1</h3>
-              <p>Create the Lab Assignment Repl</p>
-            </a>
+        <!-- Nav links -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="template/template.html" target="_blank">Skills</a>
+            </li>
+            <li class="nav-item nav-link text-primary"><a>Code</a>
+              <ul>
+                <li class="nav-item">
+                  <a class="nav-link text-primary" href="images/portfolio_html.pdf" target="_blank">HTML</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-primary" href="images/portfolio_css.pdf" target="_blank">CSS</a>
+                </li>
+              </ul>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="template/template.html" target="_blank">Resume</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="template/template.html" target="_blank">Contact</a>
+            </li>    
+          </ul>
+        </div>
+      </nav>
+
+          <!-- Bootstrap Jumbotron -->
+      <header class=""jumbotron jumbotron-fluid>
+        <div class="container">
+
+          <div class="intro">
+            <h3 class="my_title">Responsive Web Design</h3>
+            <h1 class="my_name">William S. Johnson, Jr</h1>
+            <h3 class="cs_240">CS-240</h3>
+            <p class="my_blurb">
+                A course in using the "Mobile-First" strategy with Bootstrap Framework to design
+                responsive web pages
+            </p>
           </div>
 
-          <div>
-            <a href="chapter02/analyze02.html" target="_blank">
-              <h3 class="weekly_lesson">Chapter 2</h3>
-              <p>Validating an HTML Page</p>
-            </a>
-            <p class="attachments">
-              <a href="images/chap_2_code.pdf" target="_blank">View Code</a>
-              &nbsp;&#9475;&nbsp;
-              <a href="images/chap_2_validator.png" target="_blank">Validator Screenshot</a>
-            </p>
-          </div>
+          <div class="mediaFrame">
+            <video controls preload="auto" poster="images/final_thumbnail.png">
+              <source src="media/final_mobile_video.mp4" type="video/mp4">
+              <source src="media/final_mobile_video.ogg" type="video/ogg">
+              <p>Your browser does not support the video element.</p>
+            </video>
 
-          <div>
-            <a href="chapter03/analyze03.html" target="_blank">
-              <h3 class="weekly_lesson">Chapter 3</h3>
-              <p>Adding Elements to an HTML Page</p>
-            </a>
-            <p class="attachments">
-              <a href="images/chap_3_code.pdf" target="_blank">View Code</a>
-              &nbsp;&#9475;&nbsp;
-              <a href="images/chap_3_validator.png" target="_blank">Validator Screenshot</a>
-            </p>
-          </div>
-
-          <div>
-            <a href="chapter04/analyze04.html" target="_blank">
-              <h3 class="weekly_lesson">Chapter 4</h3>
-              <p>Designing Webpages with CSS</p>
-            </a>
-            <p class="attachments">
-              <a href="images/chap_4_HTML_code.pdf" target="_blank">View HTML Code</a>
-              &nbsp;&#9475;&nbsp;
-              <a href="images/chap_4_CSS_code.pdf" target="_blank">View CSS Code</a>
-            </p>
-            <p class="attachments">
-              <a href="images/chap_4_validator.png" target="_blank">HTML Validator</a>
-              &nbsp;&#9475;&nbsp;
-              <a href="images/chap_4_CSS_validator.png" target="_blank">CSS Validator</a>
-            </p>
-          </div>
-
-          <div>
-            <a href="chapter05/analyze05.html" target="_blank">
-              <h3 class="weekly_lesson">Chapter 5</h3>
-              <p>Responsive Design Part 1</p>
-            </a>
-            <p class="attachments">
-              <a href="images/chap_5_HTML_code.pdf" target="_blank">View HTML Code</a>
-              &nbsp;&#9475;&nbsp;
-              <a href="images/chap_5_CSS_code.pdf" target="_blank">View CSS Code</a>
-            </p>
-            <p class="attachments">
-              <a href="images/chap_5_validator.png" target="_blank">HTML Validator</a>
-              &nbsp;&#9475;&nbsp;
-              <a href="images/chap_5_CSS_validator.png" target="_blank">CSS Validator</a>
-            </p>
           </div>
 
         </div>
+
+      </header>
+
+      <main>
         
-        <div class="column">
-
-          <div>
-            <a href="chapter06/analyze06.html" target="_blank">
-              <h3 class="weekly_lesson">Chapter 6</h3>
-              <p>Responsive Design Part 2</p>
-            </a>
-            <p class="attachments">
-              <a href="images/chap_6_HTML_code.pdf" target="_blank">View HTML Code</a>
-              &nbsp;&#9475;&nbsp;
-              <a href="images/chap_6_CSS_code.pdf" target="_blank">View CSS Code</a>
-            </p>
-            <p class="attachments">
-              <a href="images/chap_6_validator.png" target="_blank">HTML Validator</a>
-              &nbsp;&#9475;&nbsp;
-              <a href="images/chap_6_CSS_validator.png" target="_blank">CSS Validator</a>
-            </p>
-          </div>
-
-          <div>
-            <a href="chapter07/analyze07.html" target="_blank">
-              <h3 class="weekly_lesson">Chapter 7</h3>
-              <p>Improving Design with New Page Layouts</p>
-            </a>
-            <p class="attachments">
-              <a href="images/chap_7_HTML_code.pdf" target="_blank">View HTML Code</a>
-              &nbsp;&#9475;&nbsp;
-              <a href="images/chap_7_CSS_code.pdf" target="_blank">View CSS Code</a>
-            </p>
-            <p class="attachments">
-              <a href="images/chap_7_validator.png" target="_blank">HTML Validator</a>
-              &nbsp;&#9475;&nbsp;
-              <a href="images/chap_7_CSS_validator.png" target="_blank">CSS Validator</a>
-            </p>
-          </div>
+        <div id="gallery">
           
-          <div>
-            <a href="chapter08/analyze08.html" target="_blank">
-              <h3 class="weekly_lesson">Chapter 8</h3>
-              <p>Creating Tables and Forms</p>
-            </a>
-            <p class="attachments">
-              <a href="images/chap_8_HTML_code.pdf" target="_blank">View HTML Code</a>
-              &nbsp;&#9475;&nbsp;
-              <a href="images/chap_8_CSS_code.pdf" target="_blank">View CSS Code</a>
-            </p>
-            <p class="attachments">
-              <a href="images/chap_8_validator.png" target="_blank">HTML Validator</a>
-              &nbsp;&#9475;&nbsp;
-              <a href="images/chap_8_CSS_validator.png" target="_blank">CSS Validator</a>
-            </p>
-          </div>
+          <div id="file_cabinet">
 
-          <div>
-            <a href="chapter09/index.html" target="_blank">
-              <h3 class="weekly_lesson">Chapter 9</h3>
-              <p>Integrating Audio and Video</p>
-            </a>
-            <p class="attachments">
-              <a href="images/chap_9_HTML_code.pdf" target="_blank">View HTML Code</a>
-              &nbsp;&#9475;&nbsp;
-              <a href="images/chap_9_CSS_code.pdf" target="_blank">View CSS Code</a>
-            </p>
-            <p class="attachments">
-              <a href="images/chap_9_validator.png" target="_blank">HTML Validator</a>
-              &nbsp;&#9475;&nbsp;
-              <a href="images/chap_9_CSS_validator.png" target="_blank">CSS Validator</a>
-            </p>
+            <div class="folder_art first_in_row" style="position: relative";>
+              <div class="folder_text">
+                <a href="chapter01/index.html" target="_blank">
+                  <h3 class="weekly_lesson chapter_tab">Chapter 1</h3>
+                  <p class="chapter_title">Create the Lab Assignment Repl</p>
+                </a>
+              </div>
+            </div>
+
+            <div id="level_2" class="folder_art folder_position new_position" style="position: relative;">
+              <div class="folder_text">
+                <a href="chapter02/analyze02.html" target="_blank">
+                  <h3 class="weekly_lesson chapter_tab">Chapter 2</h3>
+                  <p class="chapter_title">Validating an HTML Page</p>
+                </a>
+                <p class="attachments chapter_items">
+                  <a href="images/chap_2_code.pdf" target="_blank">View Code</a>
+                  &nbsp;&#9475;&nbsp;
+                  <a href="images/chap_2_validator.png" target="_blank">HTML Validator</a>
+                </p>
+              </div>
+            </div>
+
+            <div id="level_3" class="folder_art folder_position new_position" style="position: relative;">
+              <div class="folder_text">
+                <a href="chapter03/analyze03.html" target="_blank">
+                  <h3 class="weekly_lesson chapter_tab">Chapter 3</h3>
+                  <p class="chapter_title">Adding Elements to an HTML Page</p>
+                </a>
+                <p class="attachments chapter_items">
+                  <a href="images/chap_3_code.pdf" target="_blank">View Code</a>
+                  &nbsp;&#9475;&nbsp;
+                  <a href="images/chap_3_validator.png" target="_blank">HTML Validator</a>
+                </p>
+              </div>
+            </div>
+
+            <div id="level_4" class="folder_art folder_position new_position" style="position: relative;">
+              <div class="folder_text">
+                <a href="chapter04/analyze04.html" target="_blank">
+                  <h3 class="weekly_lesson chapter_tab">Chapter 4</h3>
+                  <p class="chapter_title">Designing Webpages with CSS</p>
+                </a>
+                <p class="attachments chapter_items">
+                  <a href="images/chap_4_HTML_code.pdf" target="_blank">View HTML</a>
+                  &nbsp;&#9475;&nbsp;
+                  <a href="images/chap_4_CSS_code.pdf" target="_blank">View CSS</a>
+                </p>
+                <p class="attachments chapter_items_line2">
+                  <a href="images/chap_4_validator.png" target="_blank">HTML Validator</a>
+                  &nbsp;&#9475;&nbsp;
+                  <a href="images/chap_4_CSS_validator.png" target="_blank">CSS Validator</a>
+                </p>
+              </div>
+            </div>
+
+            <div id="level_5" class="folder_art folder_position first_in_row" style="position: relative;">
+              <div class="folder_text">
+                <a href="chapter05/analyze05.html" target="_blank">
+                  <h3 class="weekly_lesson chapter_tab">Chapter 5</h3>
+                  <p class="chapter_title">Responsive Design Part 1</p>
+                </a>
+                <p class="attachments chapter_items">
+                  <a href="images/chap_5_HTML_code.pdf" target="_blank">View HTML</a>
+                  &nbsp;&#9475;&nbsp;
+                  <a href="images/chap_5_CSS_code.pdf" target="_blank">View CSS</a>
+                </p>
+                <p class="attachments chapter_items_line2">
+                  <a href="images/chap_5_validator.png" target="_blank">HTML Validator</a>
+                  &nbsp;&#9475;&nbsp;
+                  <a href="images/chap_5_CSS_validator.png" target="_blank">CSS Validator</a>
+                </p>
+              </div>
+            </div>
+
+            <div id="level_6" class="folder_art folder_position new_position" style="position: relative;">
+              <div class="folder_text">
+                <a href="chapter06/analyze06.html" target="_blank">
+                  <h3 class="weekly_lesson chapter_tab">Chapter 6</h3>
+                  <p class="chapter_title">Responsive Design Part 2</p>
+                </a>
+                <p class="attachments chapter_items">
+                  <a href="images/chap_6_HTML_code.pdf" target="_blank">View HTML</a>
+                  &nbsp;&#9475;&nbsp;
+                  <a href="images/chap_6_CSS_code.pdf" target="_blank">View CSS</a>
+                </p>
+                <p class="attachments chapter_items_line2">
+                  <a href="images/chap_6_validator.png" target="_blank">HTML Validator</a>
+                  &nbsp;&#9475;&nbsp;
+                  <a href="images/chap_6_CSS_validator.png" target="_blank">CSS Validator</a>
+                </p>
+              </div>
+            </div>
+
+            <div id="level_7" class="folder_art folder_position new_position" style="position: relative;">
+              <div class="folder_text">
+                <a href="chapter07/analyze07.html" target="_blank">
+                  <h3 class="weekly_lesson chapter_tab">Chapter 7</h3>
+                  <p class="chapter_title">Improving Design with New Page Layouts</p>
+                </a>
+                <p class="attachments chapter_items">
+                  <a href="images/chap_7_HTML_code.pdf" target="_blank">View HTML</a>
+                  &nbsp;&#9475;&nbsp;
+                  <a href="images/chap_7_CSS_code.pdf" target="_blank">View CSS</a>
+                </p>
+                <p class="attachments chapter_items_line2">
+                  <a href="images/chap_7_validator.png" target="_blank">HTML Validator</a>
+                  &nbsp;&#9475;&nbsp;
+                  <a href="images/chap_7_CSS_validator.png" target="_blank">CSS Validator</a>
+                </p>
+              </div>
+            </div>
+            
+            <div id="level_8" class="folder_art folder_position new_position" style="position: relative;">
+              <div class="folder_text">
+                <a href="chapter08/analyze08.html" target="_blank">
+                  <h3 class="weekly_lesson chapter_tab">Chapter 8</h3>
+                  <p class="chapter_title">Creating Tables and Forms</p>
+                </a>
+                <p class="attachments chapter_items">
+                  <a href="images/chap_8_HTML_code.pdf" target="_blank">View HTML</a>
+                  &nbsp;&#9475;&nbsp;
+                  <a href="images/chap_8_CSS_code.pdf" target="_blank">View CSS</a>
+                </p>
+                <p class="attachments chapter_items_line2">
+                  <a href="images/chap_8_validator.png" target="_blank">HTML Validator</a>
+                  &nbsp;&#9475;&nbsp;
+                  <a href="images/chap_8_CSS_validator.png" target="_blank">CSS Validator</a>
+                </p>
+              </div>
+            </div>
+
+            <div id="level_9" class="folder_art folder_position first_in_row" style="position: relative;">
+              <div class="folder_text">
+                <a href="chapter09/index.html" target="_blank">
+                  <h3 class="weekly_lesson chapter_tab">Chapter 9</h3>
+                  <p class="chapter_title">Integrating Audio and Video</p>
+                </a>
+                <p class="attachments chapter_items">
+                  <a href="images/chap_9_HTML_code.pdf" target="_blank">View HTML</a>
+                  &nbsp;&#9475;&nbsp;
+                  <a href="images/chap_9_CSS_code.pdf" target="_blank">View CSS</a>
+                </p>
+                <p class="attachments chapter_items_line2">
+                  <a href="images/chap_9_validator.png" target="_blank">HTML Validator</a>
+                  &nbsp;&#9475;&nbsp;
+                  <a href="images/chap_9_CSS_validator.png" target="_blank">CSS Validator</a>
+                </p>
+              </div>
+            </div>
+
+            <div id="level_10" class="folder_art folder_position new_position" style="position: relative;">
+              <div class="folder_text">
+                <a href="chapter10/analyze10.html" target="_blank">
+                  <h3 class="weekly_lesson chapter_tab">Chapter 10</h3>
+                  <p class="chapter_title">Interactivity with CSS & JavaScript</p>
+                </a>
+                <p class="attachments chapter_items">
+                  <a href="images/chap_10_HTML_code.pdf" target="_blank">HTML</a>
+                  &nbsp;&#9475;&nbsp;
+                  <a href="images/chap_10_CSS_code.pdf" target="_blank">CSS</a>
+                  &nbsp;&#9475;&nbsp;
+                  <a href="images/chap_10_JS_code.pdf" target="_blank">JavaScript</a>
+                </p>
+                <p class="attachments chapter_items_line2">
+                  <a href="images/chap_10_validator.png" target="_blank">HTML Validator</a>
+                  &nbsp;&#9475;&nbsp;
+                  <a href="images/chap_10_CSS_validator.png" target="_blank">CSS Validator</a>
+                </p>
+              </div>
+            </div>
+
+            <div id="level_11" class="folder_art folder_position new_position" style="position: relative;">
+              <div class="folder_text">
+                <a href="chapter11/index.html" target="_blank">
+                  <h3 class="weekly_lesson chapter_tab">Chapter 11</h3>
+                  <p class="chapter_title">Publish, Promote & Maintain a Website</p>
+                </a>
+                <p class="attachments chapter_items">
+                  <a href="images/chap_11_HTML_code.pdf" target="_blank">View HTML</a>
+                  &nbsp;&#9475;&nbsp;
+                  <a href="images/chap_11_CSS_code.pdf" target="_blank">View CSS</a>
+                </p>
+                <p class="attachments chapter_items_line2">
+                  <a href="images/chap_11_validator.png" target="_blank">HTML Validator</a>
+                  &nbsp;&#9475;&nbsp;
+                  <a href="images/chap_11_CSS_validator.png" target="_blank">CSS Validator</a>
+                </p>
+              </div>
+            </div>
+
+            <div id="level_12" class="folder_art folder_position new_position" style="position: relative;">
+              <div class="folder_text">
+                <a href="chapter12/analyze12.html" target="_blank">
+                  <h3 class="weekly_lesson chapter_tab">Chapter 12</h3>
+                  <p class="chapter_title">Getting Started with Bootstrap</p>
+                </a>
+                <p class="attachments chapter_items">
+                  <a href="images/chap_12_HTML_code.pdf" target="_blank">View HTML</a>
+                  &nbsp;&#9475;&nbsp;
+                  <a href="images/chap_12_CSS_code.pdf" target="_blank">View CSS</a>
+                </p>
+                <p class="attachments chapter_items_line2">
+                  <a href="images/chap_12_validator.png" target="_blank">HTML Validator</a>
+                  &nbsp;&#9475;&nbsp;
+                  <a href="images/chap_12_CSS_validator.png" target="_blank">CSS Validator</a>
+                </p>
+              </div>
+            </div>
+
           </div>
 
         </div>
+        
+      </main>
 
-        <div class="column">
-
-          <div>
-            <a href="chapter10/analyze10.html" target="_blank">
-              <h3 class="weekly_lesson">Chapter 10</h3>
-              <p>Interactivity with CSS & JavaScript</p>
-            </a>
-            <p class="attachments">
-              <a href="images/chap_10_HTML_code.pdf" target="_blank">View HTML</a>
-              &nbsp;&#9475;&nbsp;
-              <a href="images/chap_10_CSS_code.pdf" target="_blank">View CSS</a>
-              &nbsp;&#9475;&nbsp;
-              <a href="images/chap_10_JS_code.pdf" target="_blank">View JavaScript</a>
-            </p>
-            <p class="attachments">
-              <a href="images/chap_10_validator.png" target="_blank">HTML Validator</a>
-              &nbsp;&#9475;&nbsp;
-              <a href="images/chap_10_CSS_validator.png" target="_blank">CSS Validator</a>
-            </p>
-          </div>
-
-          <div>
-            <a href="chapter11/index.html" target="_blank">
-              <h3 class="weekly_lesson">Chapter 11</h3>
-              <p>Publish, Promote & Maintain a Website</p>
-            </a>
-            <p class="attachments">
-              <a href="images/chap_11_HTML_code.pdf" target="_blank">View HTML Code</a>
-              &nbsp;&#9475;&nbsp;
-              <a href="images/chap_11_CSS_code.pdf" target="_blank">View CSS Code</a>
-            </p>
-            <p class="attachments">
-              <a href="images/chap_11_validator.png" target="_blank">HTML Validator</a>
-              &nbsp;&#9475;&nbsp;
-              <a href="images/chap_11_CSS_validator.png" target="_blank">CSS Validator</a>
-            </p>
-          </div>
-
-          <div>
-            <a href="chapter12/analyze12.html" target="_blank">
-              <h3 class="weekly_lesson">Chapter 12</h3>
-              <p>Getting Started with Bootstrap</p>
-            </a>
-            <p class="attachments">
-              <a href="images/chap_12_HTML_code.pdf" target="_blank">View HTML Code</a>
-              &nbsp;&#9475;&nbsp;
-              <a href="images/chap_12_CSS_code.pdf" target="_blank">View CSS Code</a>
-            </p>
-            <p class="attachments">
-              <a href="images/chap_12_validator.png" target="_blank">HTML Validator</a>
-              &nbsp;&#9475;&nbsp;
-              <a href="images/chap_12_CSS_validator.png" target="_blank">CSS Validator</a>
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-      
-    </main>
+      <footer>
+        <p class="credits">Created by:  William S. Johnson, Jr.</p>
+      </footer>
     
-    <script src="script.js"></script>
+    </div>
+
+        <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+     crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+     crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+     crossorigin="anonymous"></script>
+     <script> src="script.js"</script>
   </body>
 
 </html>

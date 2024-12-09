@@ -1,14 +1,24 @@
 @charset "utf-8";
-/* CSS Document */
+/*
+	Student Name: William S. Johnson, Jr
+	File Name: CS240 Responsive Web Design, Portfolio
+	Date: 09/03/2014
+*/
 
 *		{	box-sizing: border-box;}
 
+body                {   background: linear-gradient(to bottom, #f2f0ef 55%, #929292);
+
+}
+.wrapper            {   width: 90%;
+                        margin: auto;
+                        height: auto;
+                        border: 1pt solid hsl(0, 0%, 0%);
+                        margin-bottom: 7%;
+
+}
 #gallery            {   width: 80%;
                         margin: auto;
-}
-
-.column             {   width: 33%;
-                        float: left;
 }
 .weekly_lesson      {   margin-bottom: -1%;}
 .attachments        {   margin-top: -1%;}
@@ -17,4 +27,264 @@ a:link               {  color: #000000;}
 a:visited            {  color: #000000;}
 a:hover              {  color: #0000ff;
                         font-size: 105%;
+}
+
+
+    /*      Styles for the Menu "nav" section        */
+.my_logo            {   height: 80px;
+    padding-left: .5%;
+}
+
+nav                 {   /*background-image: url(images/my_mug_2.png);*/
+                        background-repeat: no-repeat;
+                        background-position: right;
+                        background-size: contain;
+                        background-color: #595959;
+}
+
+nav .navbar-nav a  {color: #ffffff !important;}
+
+nav ul  ul          {   background: none;
+                        display: block;
+                        width: fit-content;
+}
+nav ul  ul  li::marker {    color:#ffffff}
+
+
+    /*      Styles for the "Jumbotron" section        */
+.mediaFrame         {   border: .25em solid;
+                        width: 90%;
+                        margin: auto;
+                        clear: right;
+}
+video               {   width: 100%;
+                        height: auto;
+}
+.intro              {   text-align: right;
+                        float: right;
+}
+.my_title           {   font-size: 1.15em;
+                        font-family: "Bruno Ace SC", sans-serif;    /*  ### Google Font ### */
+}
+.cs_240             {   font-size: 1.15em;
+                        font-family: "Bruno Ace SC", sans-serif;    /*  ### Google Font ### */
+}
+.my_blurb           {   font-size: 1.15em;
+}
+
+header              {   margin-top: 5%;
+                        /*font-family: "Roboto", sans-serif;*/    /* Dicided I didn't like this one */
+                        
+}
+main                {   margin-top: 5%;}
+
+    /*  Z-index for each file folder  */
+#level_2 {z-index: 10;}
+#level_3 {z-index: 15;}
+#level_4 {z-index: 20;}
+#level_5 {z-index: 25;}
+#level_6 {z-index: 30;}
+#level_7 {z-index: 35;}
+#level_8 {z-index: 40;}
+#level_9 {z-index: 45;}
+#level_10 {z-index: 50;}
+#level_11 {z-index: 55;}
+#level_12 {z-index: 60;}
+
+
+   /*  Styles to format and control the file folder art, positioning and text  */
+.folder_art         {  background-image: url(images/folder.png);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 0;
+                        padding-top: 72.35%;    /* (imgHieght/imgWidth)containerWidth */
+}                                                   /*(594/821)100 */
+.folder_position    {   margin-top: -40%;}
+
+.folder_text {position: relative;
+    margin-top: -60%;
+    margin-left: 3%;
+}
+.chapter_tab {position: relative;
+    margin-top: -65%;
+}
+.chapter_title {padding-top: 2%;}
+.chapter_items {text-align: center;
+                margin-top: 9%;
+                margin-left: -3%;
+}
+.chapter_items_line2 {text-align: center;
+                    margin-left: -3%;
+                    margin-top: -2%;
+}
+
+.expand   {   transform: scale(1.02);
+                z-index: 70;
+                transition: all ease-in-out 1s;
+}
+
+#file_cabinet   .folder_art:hover { transform: scale(1.1);
+                                    z-index: 70;
+                                    transition: all .5s;
+ }
+ #file_cabinet   .folder_art {  transition: all .5s;}
+
+
+
+    /*  Styles for the "footer" section  */
+ footer              {   clear: left;
+    text-align: center;
+    margin: 6% auto;
+
+}
+.credits            {   font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+/*Media Query for viewport width 450-576 pixels, (Change to landscape orientation, but narrow)*/
+@media (min-width: 450px) {
+    .folder_position       {   margin-top: -45%;}
+    
+    .chapter_title          {   padding-top: 2%;
+                                font-size: 110%;
+}
+    .chapter_items          {   text-align: center;
+                                margin-top: 12%;
+                                margin-left: -3%;
+                                font-size: 120%;
+    }
+    .chapter_items_line2    {   text-align: center;
+                                margin-left: -3%;
+                                margin-top: 1%;
+                                font-size: 120%;
+    }
+}
+
+/*Media Query for viewport width 576-749 pixels, (Change to landscape orientation, but narrow)*/
+@media (min-width: 576px) {
+            /*Nav bar changes (no hamburger)*/
+    nav ul  ul      {   display: none;
+                        position: absolute;
+                        background-color: #595959;
+    }
+    nav	li:hover ul     {	display: block;
+    }
+
+    .intro              {   text-align: right;
+                            float: right;
+    }
+
+            /*Reformating the layout of folders and text on top of them, for larger screen size*/
+    .folder_position        {   margin-top: -50%;}
+    .chapter_title          {    padding-top: 2%;
+                                font-size: 120%;
+    }
+    .chapter_items          {   text-align: center;
+                                margin-top: 9%;
+                                margin-left: -3%;
+                                font-size: 140%;
+    }
+    .chapter_items_line2    {   text-align: center;
+                                margin-left: -3%;
+                                margin-top: -2%;
+                                font-size: 140%;
+    }
+    .wrapper                    {   max-width: 600px;}
+
+}
+
+
+/*Media Query for viewport width 768-970 pixels, (Change to landscape orientation, but narrow)*/
+@media (min-width: 768px) {
+    .wrapper            {   max-width: 1000px;}
+    .mediaFrame         {   border: .25em solid;
+                            width: 45%;
+                            float: left; 
+                            position: relative; 
+                            margin-top: -180px; 
+                            margin-left: 2%;         
+    }
+    .intro              {   width: 45%;
+                            position: relative;
+
+    }
+    .my_title           {   font-size: 1em;}
+    .my_name            {   font-size: 1.7em;}
+    .cs_240             {   font-size: 1em;}
+    .my_blurb           {   font-size: 1em;}
+    
+    #gallery            {   clear: both;
+                            width: 94%;
+    }
+
+    #file_cabinet       {   display: flex;
+                            flex-wrap: wrap;
+                            flex-direction: row;
+    }
+    .folder_art         {  background-image: url(images/folder.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 40%;
+        height: 0;
+        padding-top: 30%;    /* (imgHieght/imgWidth)containerWidth */   /*(594/821)100 */
+    }                               
+
+    
+    .new_position    {   margin-left: -20%;
+        margin-top: 5%;
+    }
+    .first_in_row   { margin-top: 5%;
+    }
+    .folder_text {position: relative;
+        margin-top: 35%;
+        margin-left: 3%;
+    }
+    .chapter_tab {position: relative;
+                 margin-top: -112%;
+                 font-size: .6em;
+                 margin-left: 2%;
+    }
+    .chapter_title {padding-top: 6%;
+        font-size: .84em;
+        padding-left: 2%;
+    }
+    .chapter_items {text-align: center;
+                    margin-top: 13%;
+                    margin-left: -3%;
+                    font-size: 1em;
+    }
+    .chapter_items_line2 {text-align: center;
+                        margin-left: -3%;
+                        margin-top: 3%;
+                        font-size: 1em;
+    }
+
+
+}
+
+/*Media Query for viewport width 768-970 pixels, (Large screens)*/
+@media (min-width: 970px) {
+    .chapter_tab {position: relative;
+        margin-top: -112%;
+        font-size: .8em;
+        margin-left: 2%;
+    }
+    .chapter_title {    padding-top: 6%;
+                        font-size: 1.1em;
+                        padding-left: 2%;
+    }
+    .chapter_items {    text-align: center;
+                        margin-top: 13%;
+                        margin-left: -3%;
+                        font-size: 1.2em;
+    }
+    .chapter_items_line2 {  text-align: center;
+                            margin-left: -3%;
+                            margin-top: 3%;
+                            font-size: 1.2em;
+    }
+
+
 }
